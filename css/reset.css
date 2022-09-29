@@ -1,49 +1,129 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   Licencia: ninguna (dominio público)
-*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
-html, cuerpo, div, lapso, subprograma, objeto, iframe,
-h1, h2, h3, h4, h5, h6, pag, blockquote, pre,
-abbr, acrónimo, código, citar, dirección, grande,
-del, dfn, em, img, ins, kbd, q, s, samp,
-pequeño, strike, fuerte, sub, sup, tt, var,
-b, tu, yo, centro,
-dl, dt, dd, ol, ul, li,
-fieldset, forma, etiqueta, leyenda,
-mesa, leyenda, tbody, tfoot, thead, tr, th, td,
-artículo, aparte, lienzo, detalles, incrustar,
-figura, figcaption, pie de página, encabezado, hgroup,
-menú, nav, salida, ruby, sección, resumen,
-tiempo, marca, audio, video {
-	margen: 0;
-	relleno: 0;
-	borde: 0;
-	tamaño de fuente: 100%;
-	fuente: heredar;
-	alineación vertical: línea de base;
+/ HTML5 display-role reset for older browsers */ article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
 }
-/* Restablecimiento del rol de visualización de HTML5 para navegadores más antiguos */
-aparte, artículo, detalles, figcaption, figura,
-pie de página, encabezado, hgroup, menú, navegación, sección {
-	bloqueo de pantalla;
+
+body {
+	line-height: 1;
 }
-cuerpo {
-	altura de línea: 1;
+
+ol,
+ul {
+	list-style: none;
 }
-viejo, ul {
-	estilo de lista: ninguno;
+
+blockquote,
+q {
+	quotes: none;
 }
-cita en bloque, q {
-	comillas: ninguna;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
 }
-cita en bloque: antes, cita en bloque: después,
-q:antes, q:después {
-	contenido: '';
-	contenido: ninguno;
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-mesa {
-	borde-colapso: colapso;
-	espaciado de borde: 0;
-}
-Comparte y Disfruta !
