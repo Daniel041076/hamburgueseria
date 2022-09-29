@@ -210,7 +210,7 @@ footer a:hover{
     padding: 1.15em;
     margin: var(--margingrid);
     border: 1px solid var(--colorprincipal)
-    
+
 }
 
 
@@ -245,6 +245,51 @@ footer a:hover{
 
 
 /*fin hero*/
+
+/*inicio nuestro servicio*/
+main section{
+    padding: 2.125em 1.50em;
+
+}
+
+main section h2{
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--colorprincipal);
+}
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .underline span{
+    position: absolute;
+    top: -0.4em;
+
+}
+
+main section .underline hr{
+    border-color: var(--colorprincipal);
+}
+
+
+/*final nuestro servicio*/
+
+
+
+
+
+
 
 
 
