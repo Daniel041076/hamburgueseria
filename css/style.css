@@ -164,6 +164,92 @@ footer a:hover{
 
 /*fin footer*/
 
+
+/*inicio hero*/
+.hero{
+    background-image: url(../images/fondo.jpg);
+     height: 60vh;
+    
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiplay;
+    background-color: #999;
+    color: white;
+    display: flex;
+    
+}
+
+.hero .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+   
+.hero h1{
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+}   
+
+.hero h2{
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+
+.hero p{
+    font-size: 1.15em;
+}
+
+.boton{
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    color: white;
+    text-decoration: none;  
+    padding: 1.15em;
+    margin: var(--margingrid);
+    border: 1px solid var(--colorprincipal)
+    
+}
+
+
+.boton:hover{
+    background-color: transparent;
+    columns: var(--colorprincipal);
+
+}    
+
+
+.boton:hover i{
+    transition: 0.5s;
+    transform: translateX(5px) scale(1.10);
+}
+
+.hero ul{
+    display: flex;
+    width: 9em;
+    justify-content: space-between;
+
+}
+
+
+.hero ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+
+
+
+/*fin hero*/
+
+
+
+
+
 /*mediaquerys*/
 
 @media(min-width: 37.5em) {
