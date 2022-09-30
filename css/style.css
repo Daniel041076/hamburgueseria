@@ -134,7 +134,7 @@ header nav .container .menu li :is(a:hover, .activo) {
 /*inicio footer*/
 
 
-footer{
+footer {
     background-color: var(--colorsecundario);
     padding: 1.25em 0em;
     text-align: center;
@@ -142,18 +142,19 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
-    
+
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--colorprincipal);
 }
 
-.flecha a{
+.flecha a {
     display: block;
     columns: var(--colorprincipal);
     position: fixed;
@@ -166,67 +167,66 @@ footer a:hover{
 
 
 /*inicio hero*/
-.hero{
+.hero {
     background-image: url(../images/fondo.jpg);
-     height: 60vh;
-    
+    height: 60vh;
+
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiplay;
     background-color: #999;
     color: white;
     display: flex;
-    
+
 }
 
-.hero .container{
+.hero .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90%;
 }
-   
-.hero h1{
+
+.hero h1 {
     font-family: var(--fuentetitulos);
     font-size: 2em;
-}   
+}
 
-.hero h2{
+.hero h2 {
     color: var(--colorprincipal);
     font-size: 1.25em;
     margin: var(--margingrid) 0;
 }
 
 
-.hero p{
+.hero p {
     font-size: 1.15em;
 }
 
-.boton{
+.boton {
     display: inline-block;
     background-color: var(--colorprincipal);
     color: white;
-    text-decoration: none;  
+    text-decoration: none;
     padding: 1.15em;
     margin: var(--margingrid);
     border: 1px solid var(--colorprincipal)
+}
+
+
+.boton:hover {
+    background-color: transparent;
+    columns: var(--colorprincipal);
 
 }
 
 
-.boton:hover{
-    background-color: transparent;
-    columns: var(--colorprincipal);
-
-}    
-
-
-.boton:hover i{
+.boton:hover i {
     transition: 0.5s;
     transform: translateX(5px) scale(1.10);
 }
 
-.hero ul{
+.hero ul {
     display: flex;
     width: 9em;
     justify-content: space-between;
@@ -234,7 +234,7 @@ footer a:hover{
 }
 
 
-.hero ul a{
+.hero ul a {
     color: white;
     text-decoration: none;
     font-size: 2em;
@@ -247,23 +247,23 @@ footer a:hover{
 /*fin hero*/
 
 /*inicio nuestro servicio*/
-main section{
+main section {
     padding: 2.125em 1.50em;
 
 }
 
-main section h2{
+main section h2 {
     color: black;
     font-family: var(--fuentetitulos);
     font-size: 2em;
     text-align: center;
 }
 
-main section h2 span{
+main section h2 span {
     color: var(--colorprincipal);
 }
 
-main section .underline{
+main section .underline {
     position: relative;
     width: 6.250em;
     margin: 0 auto;
@@ -272,62 +272,113 @@ main section .underline{
     text-align: center;
 }
 
-main section .underline span{
+main section .underline span {
     position: absolute;
     top: -0.4em;
 
 }
 
-main section .underline hr{
+main section .underline hr {
     border-color: var(--colorprincipal);
 }
-main section .grid{ 
+
+main section .grid {
     display: flex;
     flex-wrap: wrap;
 }
- main section .grid article{
+
+main section .grid article {
     width: 100%;
     border-bottom: 1px solid #aaa;
     padding: 1.5em 0;
- }
+}
 
- main section article>div .fa-solid{
+main section article>div .fa-solid {
     border: 1px solid var(--colorprincipal);
     padding: 0.75em;
     color: var(--colorprincipal);
     font-size: 120%;
 
- }
+}
 
- main section article h3{
+main section article h3{
     font-weight: 700;
     font-size: 110%;
     margin: 0.625em 0em;
- }
+}
 
- main p{
+main p{
     columns: #666;
     line-height: 1.25;
     font-size: 95%;
- }
+}
 
- main section article p{
+main section article p{
     margin-bottom: 0.5em;
- }
+}
 
- .enlace{
+.enlace{
     text-decoration: none;
     font-weight: 700;
     color: var(--colorprincipal);
- }
-  .fa-truck{
+}
+
+.fa-truck {
     transform: rotateY(180deg);
-  }
-
-
-
+}
 
 /*final nuestro servicio*/
+
+
+/*inicio about us*/
+
+main #aboutus{
+    margin-bottom: 4.375em;
+}
+
+main section .flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+main section.flex h3{
+    font-weight: 700;
+    font-size: 110%;
+
+}
+
+main section .flex h4{
+    color: var(--colorprincipal);
+    margin: var(--margingrid);
+}
+
+main section .flex .imagen{
+    width: 95%;
+    margin: 2.5em auto;
+
+}
+
+main section .flex .imagen .marco{
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+main section .flex .imagen .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+
+}
+
+main section .flex .imagen:hover :is(.marco .marco img){
+    transform: rotateZ(0deg);
+}
+
+
+
+
+
+
 
 
 
@@ -342,71 +393,77 @@ main section .grid{
 /*mediaquerys*/
 
 @media(min-width: 37.5em) {
+
     /*600px tablet*/
-    main section .grid article{
+    main section .grid article {
         width: 50%;
         border-bottom: none;
         border-left: 1px solid #aaa;
-        padding: 1.5em ;
+        padding: 1.5em;
         margin-top: 1em;
-     }
-     main section .grid article:last-child{
+    }
+
+    main section .grid article:last-child {
         width: 100%;
-     }
+    }
+    main section .flex {
+        
+        flex-direction: row;
+    }
+    main section .flex .imagen{
+       
+        margin: 0 2.5em;
+    
+    }
 
 }
 
-@media(min-width: 48em) {/*tablets pantalla grande*/
+@media(min-width: 48em) {
+    /*tablets pantalla grande*/
 
     header .nav-top a span {
         display: inline;
 
     }
 
-    footer{
-       text-align: left;
-        
-    } 
-    main section .grid :is(article, article:last-child){
+    footer {
+        text-align: left;
+
+    }
+
+    main section .grid :is(article, article:last-child) {
         width: 33.333%;
-        
-     }   
-        
-}    
+
+    }
+
+}
 
 
 
 
 @media(min-width:62.75em) {
 
-    header nav .container .hamburguesa{
-        display: none; /* aparece el menu en la izquierda*/
+    header nav .container .hamburguesa {
+        display: none;
+        /* aparece el menu en la izquierda*/
     }
 
-    header nav .container .menu{
+    header nav .container .menu {
         width: auto;
         text-align: left;
     }
 
-    header nav .container .menu li a{
+    header nav .container .menu li a {
 
         padding: 0em 1.25em;
         border-bottom: 1px solid #aaa;
 
     }
 
-    header nav .container .menu li{
+    header nav .container .menu li {
         display: inline-block;
     }
 
-    
-
-}    
-    
 
 
-
-
-
-    
-    
+}
